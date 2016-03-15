@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Emoji</key>
+	<array>
+		<string>Secret</string>
+		<string>Strive</string>
+		<string>stupefied</string>
+		<string>supercilious_look</string>
+		<string>surprised</string>
+		<string>sweat</string>
+		<string>sweat01</string>
+		<string>sweat02</string>
+		<string>sweat03</string>
+		<string>Shame</string>
+		<string>Shut_up</string>
+		<string>Zuo_Heng</string>
+		<string>tired</string>
+		<string>Terrified</string>
+		<string>sleep</string>
+		<string>Smile</string>
+		<string>Sorry</string>
+		<string>scold</string>
+		<string>scare</string>
+		<string>233</string>
+		<string>666</string>
+		<string>bad</string>
+		<string>Beauty</string>
+		<string>bye</string>
+		<string>chaos</string>
+		<string>Cool</string>
+		<string>crazy</string>
+		<string>cry</string>
+		<string>Dear</string>
+		<string>decline</string>
+		<string>Despise</string>
+		<string>Doubt</string>
+		<string>ghost</string>
+		<string>happy</string>
+		<string>Kuso</string>
+		<string>laugh</string>
+		<string>naughty</string>
+		<string>Poor</string>
+		<string>Pull</string>
+		<string>Right_hum</string>
+	</array>
+</dict>
+</plist>
