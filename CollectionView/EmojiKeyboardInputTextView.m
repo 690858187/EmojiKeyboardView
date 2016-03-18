@@ -8,6 +8,7 @@
 
 #import "EmojiKeyboardInputTextView.h"
 #import "Masonry.h"
+#define EmojiInputView_Height    54                                     //输入框的高度
 @interface EmojiKeyboardInputTextView ()<UITextViewDelegate>
 
 @property (nonatomic, strong) UIButton *senderButton;
@@ -44,34 +45,17 @@
     self.placeholderLable.font = [UIFont systemFontOfSize:13];
     self.placeholderLable.textColor = [UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1];
     [self addSubview:self.placeholderLable];
-    
-    
-    //    self.textField.backgroundColor = [UIColor colorWithRed:246.0/255 green:246.0/255 blue:246.0/255 alpha:1];
-    //    self.textField.textColor = [UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1];
-    //    self.textField.layer.borderColor = [UIColor colorWithRed:198.0/255 green:198.0/255 blue:198.0/255 alpha:1].
-    // [UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1]
-    self.senderButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [ self.senderButton setTitle:@"发送" forState:UIControlStateNormal];
-    [ self.senderButton setTitleColor:[UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1] forState:UIControlStateNormal];
-     self.senderButton.titleLabel.font = [UIFont systemFontOfSize:13];
-    [ self.senderButton addTarget:self action:@selector(sendButtonAction) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:self.senderButton];
-    
+        
 }
 
 - (void)layoutUI {
-    
+
     [self.placeholderLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.height.equalTo(self);
         make.left.equalTo(self).offset(5);
-        make.right.equalTo(self.senderButton.mas_left);
+        make.right.equalTo(self);
     }];
     
-    [self.senderButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.mas_right);
-        make.width.equalTo(@40);
-        make.centerY.height.equalTo(self);
-    }];
 }
 
 - (void)addObserver {

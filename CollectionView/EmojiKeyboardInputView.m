@@ -16,7 +16,9 @@
 @property (nonatomic, strong) EmojiKeyboardInputTextView *keyboardInputTextView;
 @property (nonatomic, strong) UIView *lineView_1;
 @property (nonatomic, strong) UIView *lineView_2;
+@property (nonatomic, strong) UIButton *senderButton;
 @property (nonatomic, strong) UIButton *giftButton;
+
 @end
 
 @implementation EmojiKeyboardInputView
@@ -42,48 +44,23 @@
     [self.giftButton addTarget:self action:@selector(giftButtonAction) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.giftButton];
 
-//    self.textField = [UITextField new];
-//    self.textField.backgroundColor = [UIColor colorWithRed:246.0/255 green:246.0/255 blue:246.0/255 alpha:1];
-//    self.textField.textColor = [UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1];
-//    self.textField.layer.borderColor = [UIColor colorWithRed:198.0/255 green:198.0/255 blue:198.0/255 alpha:1].CGColor;
-//    self.textField.layer.borderWidth = 0.5;
-//    self.textField.layer.cornerRadius = 2;
-//    self.textField.font = [UIFont systemFontOfSize:13];
-//    self.textField.delegate = self;
-//    self.textField.placeholder = @"说点什么吧！";
-//    [self addSubview:self.textField];
-//    
-//    UITextView *textView =[[UITextView alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-//    textView.backgroundColor = [UIColor redColor];
-//    [self addSubview:textView];
-//    
-//
-//    
-//    NSMutableAttributedString *str=[[NSMutableAttributedString alloc] initWithString:@"fdsahfjdsafkdhafjkhadjksfhjk" attributes:nil];
-//    
-//    NSTextAttachment *attachment=[[NSTextAttachment alloc] initWithData:nil ofType:nil];
-//    UIImage *img=[UIImage imageNamed:@"bye.png"];
-//    attachment.image=img;
-//    attachment.bounds=CGRectMake(0, -10, 10, 10);
-//    NSAttributedString *text=[NSAttributedString attributedStringWithAttachment:attachment];
-//    
-//    [str insertAttributedString:text atIndex:2];
-//    self.textField.attributedText = str;
-//    textView.attributedText = str;
-//    
-//    
-//    
-//    self.textField.rightViewMode = UITextFieldViewModeAlways;
-//    self.textField.rightView = [self AddsendMessageButton];
-//    self.textField.leftViewMode = UITextFieldViewModeAlways;
-//    UIView *leftView = [UIView new];
-//    leftView.frame= CGRectMake(0, 0, 10, 10);
-//    self.textField.leftView = leftView;
     
     
     self.keyboardInputTextView = [EmojiKeyboardInputTextView new];
     self.keyboardInputTextView.delegate = self;
     [self addSubview:self.keyboardInputTextView];
+    
+    self.senderButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.senderButton.layer.cornerRadius = 2;
+    self.senderButton.layer.borderWidth = 0.5;
+    self.senderButton.backgroundColor = [UIColor colorWithRed:246.0/255 green:246.0/255 blue:246.0/255 alpha:1];
+    self.senderButton.layer.borderColor = [UIColor colorWithRed:198.0/255 green:198.0/255 blue:198.0/255 alpha:1].CGColor;
+    [ self.senderButton setTitle:@"发送" forState:UIControlStateNormal];
+    [ self.senderButton setTitleColor:[UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1] forState:UIControlStateNormal];
+    self.senderButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    [ self.senderButton addTarget:self action:@selector(sendButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.senderButton];
+
     
     
     for (int i=0;i<2; i++) {
@@ -126,18 +103,17 @@
         make.width.height.equalTo(@(EmojiInputView_Height*6/8));
     }];
     
-//    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(self.smileButton.mas_right).offset(spaching);
-//        make.centerY.equalTo(self);
-//        make.height.equalTo(@(EmojiInputView_Height*5/8));
-//        make.right.equalTo(self.giftButton.mas_left).offset(-spaching);
-//    }];
+    [self.senderButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.giftButton.mas_left).offset(-2*spaching);
+        make.width.equalTo(@40);
+        make.centerY.height.equalTo(self.keyboardInputTextView);
+    }];
     
     [self.keyboardInputTextView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.smileButton.mas_right).offset(spaching);
         make.centerY.equalTo(self);
         make.height.equalTo(@(EmojiInputView_Height*5/8));
-        make.right.equalTo(self.giftButton.mas_left).offset(-spaching);
+        make.right.equalTo(self.senderButton.mas_left).offset(1);
     }];
     
     [self.lineView_1 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -155,6 +131,7 @@
 - (void)addObserver {
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TextViewTextDidChange) name:UITextViewTextDidChangeNotification object:self.keyboardInputTextView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TextDidEndEditing) name:UITextViewTextDidEndEditingNotification object:self.keyboardInputTextView];
 }
 
 #pragma mark-----Private Method
@@ -178,6 +155,16 @@
     if ([self.delegate respondsToSelector:@selector(emojiKeyboardInputViewdidSelectAddsendMessageButton)]) {
         [self.delegate emojiKeyboardInputViewdidSelectAddsendMessageButton];
     }
+    
+    UIAlertController *alertVC =[UIAlertController alertControllerWithTitle:@"" message:@"信息已发送" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *determineAlertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertVC addAction:determineAlertAction];
+    [[self getCurrentVC] presentViewController:alertVC animated:YES completion:nil];
+    
+    [self.keyboardInputTextView showPlaceholder];
+    self.keyboardInputTextView.text = nil;
 }
 
 /**
@@ -188,6 +175,7 @@
     if ([self.delegate respondsToSelector:@selector(emojiKeyboardInputViewdidSelectGiftButtonAction)]) {
         [self.delegate emojiKeyboardInputViewdidSelectGiftButtonAction];
     }
+   
 }
 
 - (void)changeKeyboardInputTextView {
@@ -218,10 +206,48 @@
 
 #pragma mark-----Public  Method
 
+- (UIViewController *)getCurrentVC
+{
+    UIViewController *result = nil;
+    
+    UIWindow * window = [[UIApplication sharedApplication] keyWindow];
+    if (window.windowLevel != UIWindowLevelNormal)
+    {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for(UIWindow * tmpWin in windows)
+        {
+            if (tmpWin.windowLevel == UIWindowLevelNormal)
+            {
+                window = tmpWin;
+                break;
+            }
+        }
+    }
+    
+    UIView *frontView = [[window subviews] objectAtIndex:0];
+    id nextResponder = [frontView nextResponder];
+    
+    if ([nextResponder isKindOfClass:[UIViewController class]])
+        result = nextResponder;
+    else
+        result = window.rootViewController;
+    
+    return result;
+}
+
+
 #pragma mark-----Notification Method
 
 - (void)TextViewTextDidChange {
    
+    if ([self.keyboardInputTextView.text  isEqual:@""]) {
+        [self.keyboardInputTextView showPlaceholder];
+    }else {
+        [self.keyboardInputTextView hidePlaceholder];
+    }
+}
+
+- (void)TextDidEndEditing {
     if ([self.keyboardInputTextView.text  isEqual:@""]) {
         [self.keyboardInputTextView showPlaceholder];
     }else {
