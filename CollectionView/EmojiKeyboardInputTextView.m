@@ -32,7 +32,7 @@
 - (void)setupView {
     
     self.backgroundColor = [UIColor colorWithRed:246.0/255 green:246.0/255 blue:246.0/255 alpha:1];
-    self.textColor = [UIColor colorWithRed:142.0/255 green:142.0/255 blue:142.0/255 alpha:1];
+    self.textColor = [UIColor blackColor];
     self.layer.borderColor = [UIColor colorWithRed:198.0/255 green:198.0/255 blue:198.0/255 alpha:1].CGColor;
     self.layer.borderWidth = 0.5;
     self.layer.cornerRadius = 2;
@@ -59,24 +59,12 @@
 }
 
 - (void)addObserver {
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TextDidBeginEditing) name:UITextFieldTextDidBeginEditingNotification object:self];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TextDidBeginEditing) name:UITextFieldTextDidBeginEditingNotification object:self];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TextDidBeginEditing) name:UITextFieldTextDidBeginEditingNotification object:self];
+
 }
 
 - (void)sendButtonAction {
     
 }
-
-//#pragma mark-----UITextViewDelegate
-//
-//- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
-//    return YES;
-//}
-//
-//- (void)textViewDidChange:(UITextView *)textView {
-//    
-//}
 
 #pragma mark-----Private Method
 

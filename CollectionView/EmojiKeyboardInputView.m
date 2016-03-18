@@ -180,14 +180,17 @@
 
 - (void)changeKeyboardInputTextView {
     
-    NSMutableAttributedString *str=[[NSMutableAttributedString alloc] initWithString:@"" attributes:nil];
+    NSString *oldTextViewStr = self.keyboardInputTextView.text;
+    
+    NSMutableAttributedString *str=[[NSMutableAttributedString alloc] initWithString:oldTextViewStr attributes:nil];
     NSTextAttachment *attachment=[[NSTextAttachment alloc] initWithData:nil ofType:nil];
     UIImage *img = _touchEmojiImage;
     attachment.image = img;
-    attachment.bounds = CGRectMake(0, 0, 25, 25);
+    attachment.bounds = CGRectMake(0, 0, 22, 19.5);
     NSAttributedString *text=[NSAttributedString attributedStringWithAttachment:attachment];
-    [str insertAttributedString:text atIndex:0];
+    [str insertAttributedString:text atIndex:oldTextViewStr.length];
     self.keyboardInputTextView.attributedText = str;
+    self.keyboardInputTextView.font = [UIFont systemFontOfSize:13];
     if (![text isEqual:@""]) {
         [self.keyboardInputTextView hidePlaceholder];
 
@@ -205,6 +208,12 @@
 
 
 #pragma mark-----Public  Method
+
+/**
+ *  获取当前屏幕vc
+ *
+ *  @return 返回当前屏幕vc
+ */
 
 - (UIViewController *)getCurrentVC
 {
