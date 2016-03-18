@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CollectionView.xcodeproj">
+      location = "self:/Users/chen/Desktop/EmojiFace/CollectionView/EmojiKeyboardView.xcodeproj">
    </FileRef>
 </Workspace>

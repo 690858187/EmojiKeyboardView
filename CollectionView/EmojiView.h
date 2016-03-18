@@ -1,5 +1,5 @@
 //
-//  EmojiView.h
+//  EmojiKeyboardView.h
 //  CollectionView
 //
 //  Created by 1234 on 16/3/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EmojiView : UIView
-@property (nonatomic, strong) UIImage *emojiImage;
-@property (nonatomic, copy) void (^eBlock)();
+@interface EmojiView : UIScrollView
+@property (nonatomic, copy) void (^EmojiBlock)(NSInteger currentPage);
+@property (nonatomic, copy) void (^touchEmojiBlock)(UIImage * currentEmojiImage);
 @end

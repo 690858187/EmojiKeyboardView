@@ -60,15 +60,16 @@
 		E31BD3831C96C0EC00523F59 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BD3751C96C0EC00523F59 /* View+MASAdditions.m */; };
 		E31BD3841C96C0EC00523F59 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BD3781C96C0EC00523F59 /* ViewController+MASAdditions.m */; };
 		E31BD3851C96C0EC00523F59 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E31BD3791C96C0EC00523F59 /* README.md */; };
-		E31BD3881C979B1C00523F59 /* EmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BD3871C979B1C00523F59 /* EmojiView.m */; };
-		E31BD38B1C979E8F00523F59 /* EmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BD38A1C979E8F00523F59 /* EmojiKeyboardView.m */; };
-		E31BD38E1C97A96500523F59 /* EmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BD38C1C97A96500523F59 /* EmojiCollectionViewCell.m */; };
+		E31BD38B1C979E8F00523F59 /* EmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BD38A1C979E8F00523F59 /* EmojiView.m */; };
+		E3259B991C9A8EF80038669B /* EmojiKeyboardInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3259B981C9A8EF80038669B /* EmojiKeyboardInputTextView.m */; };
+		E38F39A51C98FD0D005C0FFB /* EmojiKeyboardInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F39A41C98FD0D005C0FFB /* EmojiKeyboardInputView.m */; };
 		E3A404B71C9148140025564D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A404B61C9148140025564D /* main.m */; };
 		E3A404BA1C9148140025564D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A404B91C9148140025564D /* AppDelegate.m */; };
 		E3A404BD1C9148140025564D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A404BC1C9148140025564D /* ViewController.m */; };
 		E3A404C01C9148140025564D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A404BE1C9148140025564D /* Main.storyboard */; };
 		E3A404C21C9148140025564D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A404C11C9148140025564D /* Assets.xcassets */; };
 		E3A404C51C9148140025564D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A404C31C9148140025564D /* LaunchScreen.storyboard */; };
+		E3D3545C1C99482E00481AC9 /* EmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D3545B1C99482E00481AC9 /* EmojiKeyboardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,13 +141,13 @@
 		E31BD3771C96C0EC00523F59 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		E31BD3781C96C0EC00523F59 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		E31BD3791C96C0EC00523F59 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E31BD3861C979B1C00523F59 /* EmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiView.h; sourceTree = "<group>"; };
-		E31BD3871C979B1C00523F59 /* EmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiView.m; sourceTree = "<group>"; };
-		E31BD3891C979E8F00523F59 /* EmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardView.h; sourceTree = "<group>"; };
-		E31BD38A1C979E8F00523F59 /* EmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardView.m; sourceTree = "<group>"; };
-		E31BD38C1C97A96500523F59 /* EmojiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionViewCell.m; sourceTree = "<group>"; };
-		E31BD38D1C97A96500523F59 /* EmojiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionViewCell.h; sourceTree = "<group>"; };
-		E3A404B21C9148140025564D /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31BD3891C979E8F00523F59 /* EmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiView.h; sourceTree = "<group>"; };
+		E31BD38A1C979E8F00523F59 /* EmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiView.m; sourceTree = "<group>"; };
+		E3259B971C9A8EF80038669B /* EmojiKeyboardInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardInputTextView.h; sourceTree = "<group>"; };
+		E3259B981C9A8EF80038669B /* EmojiKeyboardInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardInputTextView.m; sourceTree = "<group>"; };
+		E38F39A31C98FD0D005C0FFB /* EmojiKeyboardInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardInputView.h; sourceTree = "<group>"; };
+		E38F39A41C98FD0D005C0FFB /* EmojiKeyboardInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardInputView.m; sourceTree = "<group>"; };
+		E3A404B21C9148140025564D /* EmojiKeyboardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiKeyboardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A404B61C9148140025564D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3A404B81C9148140025564D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3A404B91C9148140025564D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +157,8 @@
 		E3A404C11C9148140025564D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A404C41C9148140025564D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A404C61C9148140025564D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D3545A1C99482E00481AC9 /* EmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardView.h; sourceTree = "<group>"; };
+		E3D3545B1C99482E00481AC9 /* EmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,7 +272,7 @@
 		E3A404B31C9148140025564D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3A404B21C9148140025564D /* CollectionView.app */,
+				E3A404B21C9148140025564D /* EmojiKeyboardView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,23 +280,25 @@
 		E3A404B41C9148140025564D /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				E31BD35D1C96C0EC00523F59 /* Masonry */,
-				E31BD30C1C96C08C00523F59 /* face */,
 				E3A404B81C9148140025564D /* AppDelegate.h */,
 				E3A404B91C9148140025564D /* AppDelegate.m */,
-				E31BD3861C979B1C00523F59 /* EmojiView.h */,
-				E31BD3871C979B1C00523F59 /* EmojiView.m */,
-				E31BD3891C979E8F00523F59 /* EmojiKeyboardView.h */,
-				E31BD38A1C979E8F00523F59 /* EmojiKeyboardView.m */,
+				E3A404C11C9148140025564D /* Assets.xcassets */,
+				E38F39A31C98FD0D005C0FFB /* EmojiKeyboardInputView.h */,
+				E38F39A41C98FD0D005C0FFB /* EmojiKeyboardInputView.m */,
+				E3259B971C9A8EF80038669B /* EmojiKeyboardInputTextView.h */,
+				E3259B981C9A8EF80038669B /* EmojiKeyboardInputTextView.m */,
+				E3D3545A1C99482E00481AC9 /* EmojiKeyboardView.h */,
+				E3D3545B1C99482E00481AC9 /* EmojiKeyboardView.m */,
+				E31BD3891C979E8F00523F59 /* EmojiView.h */,
+				E31BD38A1C979E8F00523F59 /* EmojiView.m */,
 				E3A404BB1C9148140025564D /* ViewController.h */,
 				E3A404BC1C9148140025564D /* ViewController.m */,
-				E31BD38C1C97A96500523F59 /* EmojiCollectionViewCell.m */,
-				E31BD38D1C97A96500523F59 /* EmojiCollectionViewCell.h */,
-				E3A404BE1C9148140025564D /* Main.storyboard */,
-				E31BD2B61C96BBDD00523F59 /* Root.plist */,
-				E3A404C11C9148140025564D /* Assets.xcassets */,
-				E3A404C31C9148140025564D /* LaunchScreen.storyboard */,
+				E31BD30C1C96C08C00523F59 /* face */,
 				E3A404C61C9148140025564D /* Info.plist */,
+				E3A404C31C9148140025564D /* LaunchScreen.storyboard */,
+				E3A404BE1C9148140025564D /* Main.storyboard */,
+				E31BD35D1C96C0EC00523F59 /* Masonry */,
+				E31BD2B61C96BBDD00523F59 /* Root.plist */,
 				E3A404B51C9148140025564D /* Supporting Files */,
 			);
 			path = CollectionView;
@@ -310,9 +315,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E3A404B11C9148140025564D /* CollectionView */ = {
+		E3A404B11C9148140025564D /* EmojiKeyboardView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3A404C91C9148140025564D /* Build configuration list for PBXNativeTarget "CollectionView" */;
+			buildConfigurationList = E3A404C91C9148140025564D /* Build configuration list for PBXNativeTarget "EmojiKeyboardView" */;
 			buildPhases = (
 				E3A404AE1C9148140025564D /* Sources */,
 				E3A404AF1C9148140025564D /* Frameworks */,
@@ -322,9 +327,9 @@
 			);
 			dependencies = (
 			);
-			name = CollectionView;
+			name = EmojiKeyboardView;
 			productName = CollectionView;
-			productReference = E3A404B21C9148140025564D /* CollectionView.app */;
+			productReference = E3A404B21C9148140025564D /* EmojiKeyboardView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -338,10 +343,11 @@
 				TargetAttributes = {
 					E3A404B11C9148140025564D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S7L45252D5;
 					};
 				};
 			};
-			buildConfigurationList = E3A404AD1C9148140025564D /* Build configuration list for PBXProject "CollectionView" */;
+			buildConfigurationList = E3A404AD1C9148140025564D /* Build configuration list for PBXProject "EmojiKeyboardView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -354,7 +360,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3A404B11C9148140025564D /* CollectionView */,
+				E3A404B11C9148140025564D /* EmojiKeyboardView */,
 			);
 		};
 /* End PBXProject section */
@@ -423,18 +429,19 @@
 				E3A404BD1C9148140025564D /* ViewController.m in Sources */,
 				E3A404BA1C9148140025564D /* AppDelegate.m in Sources */,
 				E31BD37C1C96C0EC00523F59 /* MASConstraint.m in Sources */,
+				E3D3545C1C99482E00481AC9 /* EmojiKeyboardView.m in Sources */,
 				E31BD3841C96C0EC00523F59 /* ViewController+MASAdditions.m in Sources */,
-				E31BD38E1C97A96500523F59 /* EmojiCollectionViewCell.m in Sources */,
-				E31BD3881C979B1C00523F59 /* EmojiView.m in Sources */,
 				E31BD37E1C96C0EC00523F59 /* MASLayoutConstraint.m in Sources */,
 				E31BD3811C96C0EC00523F59 /* NSArray+MASAdditions.m in Sources */,
+				E3259B991C9A8EF80038669B /* EmojiKeyboardInputTextView.m in Sources */,
 				E31BD3801C96C0EC00523F59 /* MASViewConstraint.m in Sources */,
 				E31BD37F1C96C0EC00523F59 /* MASViewAttribute.m in Sources */,
 				E31BD3831C96C0EC00523F59 /* View+MASAdditions.m in Sources */,
 				E3A404B71C9148140025564D /* main.m in Sources */,
+				E38F39A51C98FD0D005C0FFB /* EmojiKeyboardInputView.m in Sources */,
 				E31BD3851C96C0EC00523F59 /* README.md in Sources */,
 				E31BD37B1C96C0EC00523F59 /* MASCompositeConstraint.m in Sources */,
-				E31BD38B1C979E8F00523F59 /* EmojiKeyboardView.m in Sources */,
+				E31BD38B1C979E8F00523F59 /* EmojiView.m in Sources */,
 				E31BD3821C96C0EC00523F59 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,10 +552,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CollectionView/YYKit/Vendor",
+				);
 				INFOPLIST_FILE = CollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liyuhan.Example.CollectionView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EmojiKeyboardView;
 			};
 			name = Debug;
 		};
@@ -556,17 +569,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CollectionView/YYKit/Vendor",
+				);
 				INFOPLIST_FILE = CollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liyuhan.Example.CollectionView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EmojiKeyboardView;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E3A404AD1C9148140025564D /* Build configuration list for PBXProject "CollectionView" */ = {
+		E3A404AD1C9148140025564D /* Build configuration list for PBXProject "EmojiKeyboardView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3A404C71C9148140025564D /* Debug */,
@@ -575,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3A404C91C9148140025564D /* Build configuration list for PBXNativeTarget "CollectionView" */ = {
+		E3A404C91C9148140025564D /* Build configuration list for PBXNativeTarget "EmojiKeyboardView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3A404CA1C9148140025564D /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E3A404B11C9148140025564D"
-               BuildableName = "CollectionView.app"
-               BlueprintName = "CollectionView"
-               ReferencedContainer = "container:CollectionView.xcodeproj">
+               BuildableName = "EmojiKeyboardView.app"
+               BlueprintName = "EmojiKeyboardView"
+               ReferencedContainer = "container:EmojiKeyboardView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E3A404B11C9148140025564D"
-            BuildableName = "CollectionView.app"
-            BlueprintName = "CollectionView"
-            ReferencedContainer = "container:CollectionView.xcodeproj">
+            BuildableName = "EmojiKeyboardView.app"
+            BlueprintName = "EmojiKeyboardView"
+            ReferencedContainer = "container:EmojiKeyboardView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E3A404B11C9148140025564D"
-            BuildableName = "CollectionView.app"
-            BlueprintName = "CollectionView"
-            ReferencedContainer = "container:CollectionView.xcodeproj">
+            BuildableName = "EmojiKeyboardView.app"
+            BlueprintName = "EmojiKeyboardView"
+            ReferencedContainer = "container:EmojiKeyboardView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E3A404B11C9148140025564D"
-            BuildableName = "CollectionView.app"
-            BlueprintName = "CollectionView"
-            ReferencedContainer = "container:CollectionView.xcodeproj">
+            BuildableName = "EmojiKeyboardView.app"
+            BlueprintName = "EmojiKeyboardView"
+            ReferencedContainer = "container:EmojiKeyboardView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
